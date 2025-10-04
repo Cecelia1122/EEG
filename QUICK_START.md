@@ -57,6 +57,7 @@ Option B: Download ZIP
 - Extract and navigate to the folder
 
 Create Virtual Environment
+Option A:
 ```bash
 # Create a virtual environment
 python -m venv venv
@@ -81,6 +82,20 @@ pip install --upgrade pip
 # Install all requirements
 pip install -r requirements.txt
 ```
+Option B: Create and Activate the Conda Environment
+
+```bash
+conda env create -f environment.yml
+conda activate eeg
+
+python - << 'PY'
+import sys, mne, sklearn, numpy, matplotlib
+print("Python:", sys.version.split()[0])
+print("MNE:", mne.__version__)
+print("OK")
+PY
+```
+
 Expected installation time: 3–5 minutes
 
 Common Issues:
@@ -90,7 +105,30 @@ Common Issues:
   `pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt`
 
 ---
+## Step 2.1 (Optional but Recommended): 
+Run the 5‑Minute Quick Demo
 
+```bash
+python quick_demo.py
+```
+
+Outputs
+- results/quick_demo_results.png
+
+What you should see
+- ERP with baseline applied
+- dSPM source time‑course with a peak near ~100 ms
+- Clearly separated CSP features for the synthetic classes
+
+---
+Run Tests 
+
+```bash
+pytest -q test_pipeline.py
+```
+
+- Fast to run; may skip one optional fsaverage labels test.
+  
 ## Step 3: Verify Installation (2 minutes)
 ```bash
 # Quick import test (should print versions, then "OK")
