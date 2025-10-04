@@ -68,8 +68,8 @@ eeg-neural-engineering-portfolio/
 ├── part3_source_space.py              # Source-space motor imagery analysis
 ├── nerve_stimulation.py               # Hodgkin–Huxley & CAP simulation
 │
-├──quick_demo.py                       # A simplified version showing core concepts without full complexity
-├──test_pipeline.py                    # Tests core functionality to ensure reproducibility
+├── quick_demo.py                       # A simplified version showing core concepts without full complexity
+├── test_pipeline.py                    # Tests core functionality to ensure reproducibility
 │
 ├── setup.py                           # Automated setup script
 ├── QUICK_START.md                     # 30-minute quick start guide
