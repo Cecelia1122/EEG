@@ -105,8 +105,8 @@ eeg-neural-engineering-portfolio/
 
 ```bash
 # Clone repository
-git clone https://github.com/Cecelia1122/eeg-neural-engineering-portfolio.git
-cd eeg-neural-engineering-portfolio
+git clone https://github.com/Cecelia1122/EEG.git
+cd EEG
 
 Option A:
 # Create virtual environment
