@@ -60,3 +60,16 @@ MNE-fsaverage-data/
 # Misc
 *.bak
 *.tmp
+
+# Project outputs: ignore everything in results/ by default
+results/*
+# But allow PNG images to be tracked (add others as needed)
+!results/*.png
+!results/**/*.png
+
+# Keep a placeholder file if you want the folder present when empty
+!results/.gitkeep
+
+# Data (downloaded)
+data/
+!data/.gitkeep
