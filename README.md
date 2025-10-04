@@ -61,11 +61,15 @@ eeg-neural-engineering-portfolio/
 │
 ├── README.md                          # This file
 ├── requirements.txt                   # Python dependencies
+├── environment.yml                    # Python dependencies via conda
 │
 ├── part1_forward_inverse.py           # Forward/inverse EEG source localization
 ├── part2_motor_imagery.py             # Motor imagery BCI classification
 ├── part3_source_space.py              # Source-space motor imagery analysis
 ├── nerve_stimulation.py               # Hodgkin–Huxley & CAP simulation
+│
+├──quick_demo.py                       # A simplified version showing core concepts without full complexity
+├──test_pipeline.py                    # Tests core functionality to ensure reproducibility
 │
 ├── setup.py                           # Automated setup script
 ├── QUICK_START.md                     # 30-minute quick start guide
@@ -104,6 +108,7 @@ eeg-neural-engineering-portfolio/
 git clone https://github.com/Cecelia1122/eeg-neural-engineering-portfolio.git
 cd eeg-neural-engineering-portfolio
 
+Option A:
 # Create virtual environment
 python -m venv venv
 # Windows: venv\Scripts\activate
@@ -112,7 +117,12 @@ source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 ```
-
+Option B:
+```bash
+# Create and activate the environment
+conda env create -f environment.yml
+conda activate eeg
+```
 ### Running the Analysis
 
 ```bash
