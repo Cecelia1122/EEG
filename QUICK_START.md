@@ -47,8 +47,8 @@ Supported Operating Systems:
 Option A: Clone from GitHub (Recommended)
 ```bash
 # Clone the repository
-git clone https://github.com/Cecelia1122/eeg-neural-engineering-portfolio.git
-cd eeg-neural-engineering-portfolio
+git clone https://github.com/Cecelia1122/EEG.git
+cd EEG
 ```
 
 Option B: Download ZIP
