@@ -52,7 +52,7 @@ cd EEG
 ```
 
 Option B: Download ZIP
-- Visit: https://github.com/Cecelia1122/eeg-neural-engineering-portfolio  
+- Visit: [https://github.com/Cecelia1122/EEG.git ]
 - Click “Code” → “Download ZIP”  
 - Extract and navigate to the folder
 
@@ -172,7 +172,7 @@ Applying forward model (source → scalp)...
 ANALYSIS COMPLETE!
 ```
 
-Generated Files (in results):
+Generated Files (saved to results/):
 - forward_model_demo.png — Dipole source and scalp topography
 - inverse_methods_comparison.png — Time courses from 3 methods
 - inverse_mne_brain.png — MNE source localization on brain
@@ -259,7 +259,7 @@ Expected results:
 - Source-space: ~60%+ accuracy
 - Brain activation maps
 
-Generated files (results):
+Generated files (saved to results/):
 - motor_cortex_activation.png — Time courses in motor regions
 - sensor_vs_source_comparison.png — Performance comparison
 - brain_activation_left_hand.png — Left-hand imagery activation
@@ -277,7 +277,7 @@ What happens:
 
 Runtime: ~1 minute (fastest!)
 
-Generated files (results):
+Generated files (saved to results/):
 - single_fiber_action_potential.png — HH model dynamics
 - compound_action_potential.png — Fiber recruitment
 - nerve_conduction_study.png — Clinical measurement
