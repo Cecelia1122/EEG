@@ -172,7 +172,7 @@ Applying forward model (source → scalp)...
 ANALYSIS COMPLETE!
 ```
 
-Generated Files (in current directory):
+Generated Files (in results):
 - forward_model_demo.png — Dipole source and scalp topography
 - inverse_methods_comparison.png — Time courses from 3 methods
 - inverse_mne_brain.png — MNE source localization on brain
@@ -259,7 +259,7 @@ Expected results:
 - Source-space: ~60%+ accuracy
 - Brain activation maps
 
-Generated files (current directory):
+Generated files (results):
 - motor_cortex_activation.png — Time courses in motor regions
 - sensor_vs_source_comparison.png — Performance comparison
 - brain_activation_left_hand.png — Left-hand imagery activation
@@ -277,7 +277,7 @@ What happens:
 
 Runtime: ~1 minute (fastest!)
 
-Generated files (current directory):
+Generated files (results):
 - single_fiber_action_potential.png — HH model dynamics
 - compound_action_potential.png — Fiber recruitment
 - nerve_conduction_study.png — Clinical measurement
@@ -331,7 +331,7 @@ processor = MotorImageryProcessor(subject_ids=[1])
 ```
 
 Issue 4: Plots Don’t Display
-- Images save automatically (Part 2: results/; others: current directory)
+- Images save automatically (Part 2: results/; others: results)
 ```bash
 ls *.png || ls results/*.png
 ```
