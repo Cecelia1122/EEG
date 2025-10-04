@@ -26,6 +26,14 @@ print("2. Source localization (inverse problem)")
 print("3. Simple classification example")
 print("=" * 60)
 
+
+# Auto-create a results directory next to this script
+RESULTS_DIR = Path(__file__).resolve().parent / "results"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+
+def out(name: str) -> str:
+    return str(RESULTS_DIR / name)
+
 # ============================================================================
 # Part 1: Load Sample Data
 # ============================================================================
@@ -163,7 +171,7 @@ ax3.legend(handles=legend_elems)
 ax3.grid(True, alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('quick_demo_results.png', dpi=150, bbox_inches='tight')
+plt.savefig(out('quick_demo_results.png'), dpi=150, bbox_inches='tight')
 print("   Saved: quick_demo_results.png")
 
 # ============================================================================
