@@ -52,7 +52,7 @@ cd EEG
 ```
 
 Option B: Download ZIP
-- Visit: [https://github.com/Cecelia1122/EEG.git ]
+- Visit: [https://github.com/Cecelia1122/EEG.git]
 - Click “Code” → “Download ZIP”  
 - Extract and navigate to the folder
 
@@ -331,7 +331,7 @@ processor = MotorImageryProcessor(subject_ids=[1])
 ```
 
 Issue 4: Plots Don’t Display
-- Images save automatically (Part 2: results/; others: results)
+- Images save automatically (Part 2: results/; others: results/)
 ```bash
 ls *.png || ls results/*.png
 ```
