@@ -39,31 +39,9 @@ htmlcov/
 logs/
 .cache/
 
-# Project outputs (keep your generated images out of git)
-results/
-
-# Data (ignore downloaded PhysioNet EEGBCI files saved under repo)
-data/
-!data/.gitkeep
-
-# MNE datasets (normally in home directory; ignore if they end up here)
-mne_data/
-MNE-*
-MNE-sample-data/
-MNE-fsaverage-data/
-
-# PyVista/VTK temp (if any are created locally)
-*.vtk
-*.vti
-*.vtp
-
-# Misc
-*.bak
-*.tmp
-
 # Generated outputs: ignore everything in results/ by default
 results/*
-# Track PNGs in results/ (remove these lines if you want results completely ignored)
+# Track PNGs in results/ (remove these three lines if you want results fully ignored)
 !results/*.png
 !results/**/*.png
 !results/.gitkeep
@@ -72,8 +50,17 @@ results/*
 data/
 !data/.gitkeep
 
-# MNE datasets (if ever downloaded into the repo; usually in ~/mne_data)
+# MNE datasets (if ever downloaded into repo; usually live in ~/mne_data)
 mne_data/
 MNE-*
 MNE-sample-data/
-MNE-fsaverage-data
+MNE-fsaverage-data/
+
+# PyVista/VTK temp
+*.vtk
+*.vti
+*.vtp
+
+# Misc
+*.bak
+*.tmp
